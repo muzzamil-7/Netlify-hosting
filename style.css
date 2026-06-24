@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(255, 114, 114);
+    --secondary-color: rgb(136, 136, 247);
+    --tertiary-color: rgb(95, 255, 95);
+    --fallback-color: rgb(255, 255, 255);
+    --margin: 40px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(rgb(160, 144, 248), rgb(0, 0, 0));
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.box1 {
+    background-color: var(--primary-color);
+    margin: var(--margin);
+}
+
+.box2 {
+    --secondary-color: rgb(250, 11, 11);
+
+    background-color: var(--secondary-color);
+}
+
+.box3 {
+    background-color: var(--tertiary-color);
+}
+
+.box4 {
+    background-color: var(--quaternary-color, rgb(255, 255, 255));
+}
